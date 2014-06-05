@@ -34,35 +34,18 @@ return array(
                     'location' => 'postField',
                     'required' => true
                 ),
-                /** Content information **/
-                'dl' => array(
-                    'description' => 'Document location url',
-                    'location' => 'postField',
-                ),
-                'dh' => array(
-                    'description' => 'Document hostname',
-                    'location' => 'postField',
-                ),
-                'dp' => array(
-                    'description' => 'Document path',
-                    'location' => 'postField',
-                ),
-                'dt' => array(
-                    'description' => 'Document title',
-                    'location' => 'postField',
-                ),
-                'cd' => array(
-                    'description' => 'Content description',
-                    'location' => 'postField',
-                ),
-                'linkid' => array(
-                    'description' => 'The ID of a clicked DOM element',
-                    'location' => 'postField',
-                ),
                 /** Session **/
                 'sc' => array(
                     'location' => 'postField',
                     'description' => 'Session control',
+                ),
+                'ua' => array(
+                    'location' => 'postField',
+                    'description' => 'User-agent override',
+                ),
+                'uip' => array(
+                    'description' => 'ip override',
+                    'location' => 'postField'
                 ),
                 /** Traffic Sources **/
                 'dr' => array(
@@ -101,33 +84,78 @@ return array(
                     'location' => 'postField',
                     'description' => 'Specifies the Google Display Ads Id',
                 ),
-                /** Application tracking **/
+                /** System Info **/
+                'sr' => array(
+                    'description' => 'Screen Resolution',
+                    'location' => 'postField',
+                ),
+                'vp' => array(
+                    'description' => 'Viewport size',
+                    'location' => 'postField',
+                ),
+                'de' => array(
+                    'description' => 'Document Encoding',
+                    'location' => 'postField',
+                ),
+                'sd' => array(
+                    'description' => 'Screen Colors',
+                    'location' => 'postField',
+                ),
+                'ul' => array(
+                    'description' => 'User Language',
+                    'location' => 'postField',
+                ),
+                'je' => array(
+                    'description' => 'Java Enabled',
+                    'location' => 'postField',
+                ),
+                'fl' => array(
+                    'description' => 'Flash Version',
+                    'location' => 'postField',
+                ),
+                /** Content information **/
+                'dl' => array(
+                    'description' => 'Document location url',
+                    'location' => 'postField',
+                ),
+                'dh' => array(
+                    'description' => 'Document hostname',
+                    'location' => 'postField',
+                ),
+                'dp' => array(
+                    'description' => 'Document path',
+                    'location' => 'postField',
+                ),
+                'dt' => array(
+                    'description' => 'Document title',
+                    'location' => 'postField',
+                ),
+                'cd' => array(
+                    'description' => 'Content description',
+                    'location' => 'postField',
+                ),
+                'linkid' => array(
+                    'description' => 'The ID of a clicked DOM element',
+                    'location' => 'postField',
+                ),
+                /** App Tracking **/
                 'an' => array(
                     'location' => 'postField',
                     'description' => 'Application name',
+                ),
+                'aid' => array(
+                    'location' => 'postField',
+                    'description' => 'Application ID',
                 ),
                 'av' => array(
                     'description' => 'Application version',
                     'location' => 'postField'
                 ),
-                /** Content Experiments **/
-                'xid' => array(
+                'aiid' => array(
                     'location' => 'postField',
-                    'description' => 'Experiment ID',
+                    'description' => 'Application Installer ID',
                 ),
-                'xvar' => array(
-                    'description' => 'Experiment variant',
-                    'location' => 'postField'
-                ),
-                /** unofficial **/
-                'ua' => array(
-                    'location' => 'postField',
-                    'description' => 'User-agent override',
-                ),
-                'uip' => array(
-                    'description' => 'ip override',
-                    'location' => 'postField'
-                ),
+                /** Custom Dimensions / Metrics **/
                 'cm1' => array(
                     'description' => 'Custom metric 1',
                     'location' => 'postField',
@@ -174,6 +202,16 @@ return array(
                 'cd18' => array('location' => 'postField'),
                 'cd19' => array('location' => 'postField'),
                 'cd20' => array('location' => 'postField'),
+                /** Content Experiments **/
+                'xid' => array(
+                    'location' => 'postField',
+                    'description' => 'Experiment ID',
+                ),
+                'xvar' => array(
+                    'description' => 'Experiment variant',
+                    'location' => 'postField'
+                ),
+
             )
         ),
         'pageview' => array(
